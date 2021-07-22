@@ -6,7 +6,7 @@
   hosts: localhost
   connection: local
   vars_files:
-     - newdetails.vars
+     - new.vars
      - cred.vars
 
 
@@ -105,7 +105,7 @@
   hosts: instances
   become: true
   vars_files:
-     - newdetails.vars
+     - new.vars
   tasks:
 
   - name: Create Docker Yum Repo
