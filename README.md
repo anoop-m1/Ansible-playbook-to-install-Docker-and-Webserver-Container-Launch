@@ -1,5 +1,25 @@
 # Ansible-playbook-to-install-Docker-and-Webserver-Container-Launch with in an AWS infra
 
+##### CODE FLOW >>>>>>
+
+
+######  - name: "Creating Aws Infrastructure"  
+######  - name: "Aws - Creating KeyPair"   
+######  - name: "Aws - Creating Secutiry Group"     
+######  - name: "Aws - Creating Ec2 Instance"   
+######  - name: "Aws - Creating Dynamic Inventory"
+######  - name: Docker Configuration and Webserver
+######  - name: Create Docker Yum Repo
+######  - name: Install Docker (compatible version)
+######  - name: Start and Enable Docker Service
+######  - name: Install Python3
+######  - name: Install Docker-Python module
+######  - name: Pull httpd Image from Docker Hub
+######  - name: Create Directory
+######  - name: Copy webpage content
+######  - name: Launch Webserver Container
+
+# ###############################################################################################################################################
 ````sh
 ---
 - name: "Creating Aws Infrastructure"
