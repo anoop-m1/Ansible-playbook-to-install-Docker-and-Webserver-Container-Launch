@@ -126,14 +126,14 @@
        name: "python3-pip"
        state: present
 
-  - name: Install Docker SDK for Python
+  - name: Install Docker-python module
     pip:
        name: "docker"
        state: present
 
   - name: Pull httpd Image from Docker Hub
     docker_image:
-       name: "httpd"
+       name: "httpd:2.2"
        source: pull
 
   - name: Create Directory
@@ -149,7 +149,7 @@
   - name: Launch Webserver Container
     docker_container:
        name: "webserver"
-       image: "httpd"
+       image: "httpd:2.2"
        state: started
        exposed_ports: "80"
        ports: "8080:80"
