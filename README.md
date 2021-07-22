@@ -115,7 +115,7 @@
        baseurl: https://download.docker.com/linux/centos/7/x86_64/stable/
        gpgcheck: no
 
-  - name: Install Docker (compatible version)
+  - name: Install Docker
     command: "yum install docker-ce --nobest -y"
 
   - name: Start and Enable Docker Service
@@ -129,7 +129,7 @@
        name: "python3-pip"
        state: present
 
-  - name: Install Docker SDK for Python
+  - name: Install Docker-Python module
     pip:
        name: "docker"
        state: present
