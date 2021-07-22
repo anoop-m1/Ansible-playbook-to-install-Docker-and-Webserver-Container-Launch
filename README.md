@@ -7,7 +7,7 @@
   connection: local
   vars_files:
      - new.vars
-     - cred.vars
+     - credential.vars
 
 
   tasks:
