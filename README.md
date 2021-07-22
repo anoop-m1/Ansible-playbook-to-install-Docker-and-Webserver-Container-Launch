@@ -146,7 +146,7 @@
 
   - name: Copy webpage content
     copy:
-       content: "Testing webserver container!!\n"
+       content: "<center><h1>TESTING WEBSERVER CONTAINER</h1></center>"
        dest: "/webpages/index.html"
 
   - name: Launch Webserver Container
